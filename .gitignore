@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+boxim_dump_out/
+dump_*.bin
+findings.json
