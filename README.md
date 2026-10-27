@@ -22,6 +22,18 @@ key 的完整生命周期 `生成 → 存储 → 使用 → 作用于数据` 是
 
 > ⚠️ 本仓库只开源**业界通用的逆向分析能力**。受专利保护的数学检测引擎（同调/因果/范畴/FCA）已剥离，见下方「专利保护与开源边界」。蚁群协作调度底座见独立仓库 [froghacker-ant-swarm](https://github.com/wwyhji/froghacker-ant-swarm)。
 
+## 🗺️ 蛙客开源仓库导航
+
+蛙客平台按能力拆为五个独立仓库，本仓库是其中的**逆向关联追踪引擎**：
+
+| 仓库 | 定位 |
+|------|------|
+| [froghacker-defense](https://github.com/wwyhji/froghacker-defense) | 防御端（蓝队）：检测规则 / 蜜罐 / IDS / 防火墙 / 加固 |
+| **[froghacker-reveng](https://github.com/wwyhji/froghacker-reveng)** | 逆向关联追踪引擎：APK 逆向找 key（本仓库） |
+| [froghacker-ant-swarm](https://github.com/wwyhji/froghacker-ant-swarm) | 蚁群协作调度底座：多 Agent 任务分配 |
+| [froghacker-antihallucination](https://github.com/wwyhji/froghacker-antihallucination) | 算法抗幻觉：确定性验证 + 事实断言裁决 |
+| [froghacker-audit](https://github.com/wwyhji/froghacker-audit) | 代码静态安全审计：regex + AST 污点 |
+
 ## ✨ 特性
 
 - **关联图建模** — 5 类节点（DATA/FUNC/VAR/CONST/EXT）× 5 类关联边（ENCRYPTED_BY/KEY_ARG/SOURCE/CALLED_BY/STORE）
